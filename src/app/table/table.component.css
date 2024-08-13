@@ -1,0 +1,26 @@
+box {
+    margin-top: '10px';
+}
+
+table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: '14px';
+    width: 100%;
+  }
+   
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #aea6a6;
+  color: rgb(14, 13, 13);
+}
+
+  
+  
+
+
+    

@@ -1,0 +1,19 @@
+mat-form-field {
+    width: 100%;
+}
+
+.theTitle {
+    width: 50%;
+}
+
+.thePriority {
+    width:70%;
+}
+
+.theDate {
+    width: 60%;
+}
+
+.theSave {
+    margin-left: 490px;
+}

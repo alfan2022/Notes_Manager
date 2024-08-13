@@ -1,0 +1,12 @@
+<div *ngIf="recieveRow">
+<h1><b>{{recieveRow.title}}</b></h1>
+<h3>{{recieveRow.priority}}</h3>
+<div class="per">
+   <h4> Noted :  {{recieveRow.created | date }}</h4>
+   <h4> Updated : {{recieveRow.modified | date}}</h4>
+</div>
+<p>{{recieveRow.details}}</p>
+
+<button mat-raised-button color="warn" mat-dialog-close>Close</button>
+ 
+</div>

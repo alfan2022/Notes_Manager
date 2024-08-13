@@ -1,0 +1,42 @@
+<h1 mat-dialog-title>{{actionTitle}}</h1>
+
+<div mat-dialog-content>
+   <form [formGroup]="noteForm">
+    <mat-form-field class="theTitle"  appearance="fill">
+      <mat-label>Title</mat-label>
+      <input formControlName="title" matInput required>
+    </mat-form-field>
+    <mat-form-field class="theCreated" appearance="fill" style="display:none">
+      <mat-label>Created</mat-label>
+      <input  formControlName="created" matInput [matDatepicker]="picker" [value]='value' readonly>
+  <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    
+
+   <mat-form-field id="here" class="theModified" appearance="fill" style="display:none">
+    <mat-label>Modified</mat-label>
+    <input formControlName="modified" matInput >
+  </mat-form-field>
+
+
+    <mat-form-field class="thePriority" appearance="fill">
+      <mat-label>Priority</mat-label>
+      <mat-select formControlName="priority" required>
+        <mat-option value="Important">Important</mat-option>
+        <mat-option value="Less important">Less important</mat-option>
+        <mat-option value="Unimportant">Unimportant</mat-option>
+      </mat-select>
+    </mat-form-field>
+    
+    <mat-form-field appearance="fill">
+      <mat-label>Details</mat-label>
+      <textarea formControlName="details" matInput></textarea>
+    </mat-form-field>   
+   </form>
+
+</div>
+<div mat-dialog-action [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close  >Cancel</button>
+  <button class="theSave" mat-raised-button color="primary" (click)="addNote()">{{actionButton}}</button>
+
+</div>
